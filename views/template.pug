@@ -1,0 +1,33 @@
+doctype html
+html
+    head
+        title= title || 'Repartus: A smarter resume builder'
+        meta(name="description" content="KJS. Get Back in the Game!")
+        html(lang="en")
+        block CSS
+        block JS
+        
+    body
+        #navframe
+            #nf-logo
+                a(href='/')
+                    img(src='../img/resume.png' alt='Repartus' height=100)
+            #nf-title
+                h1(style='text-align: center') Repartus
+            #nf-tabs
+                a(href='/whatwedo')
+                    .nf-tab#whatwedo
+                        span WHAT WE DO
+                a(href='/howitworks')
+                    .nf-tab#howitworks
+                        span HOW IT WORKS
+                a(href='/getstarted')
+                    .nf-tab#getstarted
+                        span GET STARTED
+                a(href='/contactus')
+                    .nf-tab#contactus
+                        span CONTACT US
+                
+
+        block content
+

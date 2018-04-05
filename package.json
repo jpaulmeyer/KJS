@@ -1,0 +1,30 @@
+{
+  "name": "kjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpaulmeyer/KJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpaulmeyer/KJS/issues"
+  },
+  "homepage": "https://github.com/jpaulmeyer/KJS#readme",
+  "dependencies": {
+    "body-parser": "1.18.2",
+    "express": "4.16.3",
+    "helmet": "3.12.0",
+    "mailgun-js": "0.16.0",
+    "nib": "1.1.2",
+    "path": "0.12.7",
+    "pug": "2.0.3",
+    "serve-favicon": "2.4.5",
+    "stylus": "0.54.5"
+  }
+}

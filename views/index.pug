@@ -1,0 +1,12 @@
+extends template
+
+block CSS
+	link(rel="stylesheet" type="text/css" href="/css/main.css")
+	link(rel="stylesheet" type="text/css" href="/css/index.css")
+block content
+	#home-content
+		p Type in the answer to the first question below
+		#form-stuff
+			form(action='/part2', method='GET')
+				input(type='textarea', name='title', style='display: block; margin: 0 auto')
+				input(type='submit', value='SEND', style='display: block; margin: 0 auto')

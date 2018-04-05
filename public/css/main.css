@@ -1,0 +1,62 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+p,
+span,
+ul,
+li {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+#nf-logo img {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px 10px 20px;
+}
+
+#nf-title p {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#navframe #nf-tabs {
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+}
+#navframe #nf-tabs .nf-tab {
+  display: inline-block;
+  padding: 20px 20px 25px 20px;
+}
+#navframe #nf-tabs .nf-tab span {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+.text-center {
+  text-align: center;
+}
