@@ -1,6 +1,7 @@
-var skillsSelect = document.getElementById("newInd");
 
-console.log(skillsSelect)
-var selectedText = skillsSelect.options[skillsSelect.selectedIndex];
-
-console.log(skillsSelect.selectedIndex)
+function myfunc()
+    {
+    	var s = document.getElementsByName('newSkill')[0];
+		var text = s.options[s.selectedIndex].text;
+		console.log(text)
+    }
