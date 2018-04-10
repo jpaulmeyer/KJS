@@ -1,4 +1,6 @@
 var skillsSelect = document.getElementById("newInd");
-var selectedText = skillsSelect.options[skillsSelect.selectedIndex].text;
 
 console.log(skillsSelect)
+var selectedText = skillsSelect.options[skillsSelect.selectedIndex];
+
+console.log(skillsSelect.selectedIndex)
