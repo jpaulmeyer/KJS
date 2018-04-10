@@ -1,3 +1,3 @@
-$("#newINd option:selected").text();
+$("#newInd option:selected").text();
 
 console.log(text)
