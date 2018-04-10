@@ -1,3 +1,2 @@
-$("#newInd option:selected").text();
-
-console.log(newInd option:selected)
+var skillsSelect = document.getElementById("newInd");
+var selectedText = skillsSelect.options[skillsSelect.selectedIndex].text;
