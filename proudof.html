@@ -4,48 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Repartus</title>
+    <title>Proud</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
 </head>
 <body>
+        <nav class="navbar is-white">
+                <div class="container">
+                  <div class="navbar-brand">
+                    <a class="navbar-item">
+                      <img src="http://alanstevens.io/media/icon_resume.gif" alt="Logo">
+                    </a>
+                    <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                  </div>
+                  <div id="navbarMenuHeroC" class="navbar-menu">
+                    <div class="navbar-end">
+                      <a class="navbar-item">
+                        Home
+                      </a>
+                      <a class="navbar-item">
+                        Profile
+                      </a>
+                      <a class="navbar-item">
+                        Examples
+                      </a>
+                      
+                    </div>
+                  </div>
+                </div>
+            </nav>
+             <!--END NAV-->
+               <!--BEGIN TITLE-->
     <section class="hero is-dark">
             <div class="hero-body">
               <div class="container">
                 <h1 class="title">
                    What are you most proud of in the role?
-                </h1> 
-              </div>
-              
+                </h1>  
+                <h2 class="subtitle">
+                    Position 1
+                </h2>  
+              </div> 
             </div>
-          
     </section>
 </section>
+  <!--END TITLE-->
 
+    <!--BEGIN SIDE NAV-->
+<div class="container">
+<div class="block">
+        <div class="columns">
+                <div class="column is-3">
+            <aside class="menu">
+                    <p class="menu-label">
+                        Navigate
+                       </p>
+                           <ul class="menu-list">
+                                   <li>
+                                     <a>Past Experiences</a>
+                                        <ul>
+                                         <li><a class="is-active"> Position 1</a></li>
+                                            <li><a>Position 2</a></li>
+                                            <li><a>Positin 3</a></li>
+                                        </ul>
+                                         </li>
+                             <li><a>Education</a></li>
+                             <li><a>Skills</a></li>
+                             <li><a>Other</a></li>
+                           </ul>
+                         </aside>
+                         </div>
+                           <!--END SIDE NAV-->
+       
+    <!--BEGIN QUESTIONS-->
 <div class="container">
 <div class="field">
+        <section class="section">
         <div class="control">
           <div class="select is-dark">
             <select name="newSkill" id="newSkill">
                 <option value="1">Select dropdown</option>
-                <option value="2">Adopted</option>
-                <option value="3">Oversaw</option>
+                <option value="2">Analyzed</option>
+                <option value="3">Coordinated</option>
                 <option value="4">Developed</option>
                 <option value="5">Designed</option>
-                <option value="6">Recommended</option>
-                <option value="7">Overhauled</option>
+                <option value="6">Engineered</option>
+                <option value="7">Managed</option>
             </select> 
             <input type = "button" onclick = "myfunc()" value = "Submit">
           </div>
         </div>
+          <!--Maybe make this select somehow for Javascript-->
+       <div class="control">
+            <input class="input" type="text" placeholder="Text input">
+            <input type = "button" onclick = "myfunc()" value = "Submit">
+          </div>
       </div>
-      <div class="field">
-            <div class="control">
-            <select>
-                    <input class="input is-centered" type="text" placeholder="I... ">
-                    <input type = "button" onclick = "myfunc()" value = "Submit">
-                  </select>
-    </div> 
-    <div>
+       
+
+            <section class="section">
+                    <div class="select is-dark">
+                        <!--NOTE NAME CHANGE FROM THE ABOVE OPTION-->
+                            <select name="newSkill2" id="newSkill2">
+                                <option value="1">Select dropdown</option>
+                                <option value="2">Analyzed</option>
+                                <option value="3">Coordinated</option>
+                                <option value="4">Developed</option>
+                                <option value="5">Designed</option>
+                                <option value="6">Engineered</option>
+                                <option value="7">Managed</option>
+                            </select> 
+                            <input type = "button" onclick = "myfunc()" value = "Submit">
+                          </div>
+            <input class="input" type="text" placeholder="Text input">
+            <input type = "button" onclick = "myfunc()" value = "Submit">
+
+            <!--ADDING THIS FOR THE ADD MORE FUNCTIONALITY NOT IMPLEMENTED-->
+            <input type = "button" onclick = "myfunc()" value = "Add more">
+            
+          </div>
+           
+         </div> 
+     </div>
         </section>
   <section class="section">
           <div class="container">
