@@ -26,7 +26,7 @@
 function getOption() {
     var obj = document.getElementById("mySelect");
     sessionStorage.setItem('value', obj.options[obj.selectedIndex].text)
-    console.log(sessionStorage.getItem('value'))
+    console.log(sessionStorage('value'))
 }
 </script>
 
@@ -41,27 +41,7 @@ Select your favorite fruit:
 <br><br>
 <input type="button" onclick="getOption()" value="Click Me!">
 </form>
- <section class="section">
-            <div class="container">
-                    <footer class="footer">
-                            <div class="container">
-                              <div class="content has-text-centered">
-                                          <div class="buttons">
-                                                <a href="/past.html">
-                                                  <span class="button is-dark">Back</span>
-                                                </a>
-                                                <a href="/skills.html">
-                                                  <span class="button is-success">Save changes</span>
-                                                </a>
-                                                <a href="/doneresume.html">
-                                                  <span class="button is-info">Save and continue</span>
-                                                </a>
-                                              </div>
-                              </div>
-                            </div>
-                          </footer> 
-            </div>
-          </section>
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="scripts.js"></script>
