@@ -7,7 +7,7 @@
     <title>PDFExampleResume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
 </head>
-<body>
+<body onload="printOption()">
             <!--END NAV-->
         <section class="hero is-dark">
                 <div class="hero-body">
@@ -22,7 +22,7 @@
                 </div>
               </section>
         <script>
-                body.onload = function printOption() {
+                  function printOption() {
                   document.getElementById("demo").innerHTML = 
                   sessionStorage.getItem("value");
                   console.log('test')
