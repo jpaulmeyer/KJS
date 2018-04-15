@@ -22,64 +22,46 @@
           
     </section>
 </section>
+<script>
+function getOption() {
+    var obj = document.getElementById("mySelect");
+    sessionStorage.setItem('value', obj.options[obj.selectedIndex].text)
+    console.log(sessionStorage.getItem('value'))
+}
+</script>
 
-<div class="container">
-<div class="field">
-        <div class="control">
-          <div class="select is-dark">
-            <select name="newSkill" id="newSkill">
-                <option value="0">Select dropdown</option>
-                <option value="Administration">Administration</option>
-                <option value="Agriculture">Agriculture</option>
-                <option value="Broadcasting">Broadcasting</option>
-                <option value="Clothing/Retail">Clothing/Retail</option>
-                <option value="Construction">Construction</option>
-                <option value="Energy">Energy</option>
-                <option value="Financial Services">Financial Services</option>
-                <option value="Information Systems">Information Systems</option>
-                <option value="Insurance">Insurance</option>
-                <option value="Leisure/Hospitality">Leisure/Hospitality</option>
-                <option value="Manufacturing">Manufacturing</option>
-            </select> 
-            <input type = "button" onclick = "myfunc()" value = "Submit">
-          </div>
-        </div>
-      </div>
-    </div> 
-  </div>
-     
-    <div>
-        </section>
-  <section class="section">
-          <div class="container">
-   
-                                <div>
-                                  </section>
-                            <section class="section">
-                                    <div class="container">
-                                            <footer class="footer">
-                                                    <div class="container">
-                                                      <div class="content has-text-centered">
-                                                                  <div class="buttons">
-                                                                        <a href="/education.html">
-                                                                          <span class="button is-dark">Back</span>
-                                                                        <a href="/newinterest.html">
-                                                                          <span class="button is-success">Save changes</span>
-                                                                        </a>
-                                                                        <a href="/roles.html">
-                                                                          <span class="button is-info">Save and continue</span>
-                                                                        </a>
-                                                                      </div>
-                                                      </div>
-                                                    </div>
-                                                  </footer> 
-                                    </div>
-                                  </section>
-                           
-                            
-              </body>          
-
-              
+<form>
+Select your favorite fruit:
+<select id="mySelect">
+  <option>Apple</option>
+  <option>Orange</option>
+  <option>Pineapple</option>
+  <option>Banana</option>
+</select>
+<br><br>
+<input type="button" onclick="getOption()" value="Click Me!">
+</form>
+ <section class="section">
+            <div class="container">
+                    <footer class="footer">
+                            <div class="container">
+                              <div class="content has-text-centered">
+                                          <div class="buttons">
+                                                <a href="/past.html">
+                                                  <span class="button is-dark">Back</span>
+                                                </a>
+                                                <a href="/skills.html">
+                                                  <span class="button is-success">Save changes</span>
+                                                </a>
+                                                <a href="/doneresume.html">
+                                                  <span class="button is-info">Save and continue</span>
+                                                </a>
+                                              </div>
+                              </div>
+                            </div>
+                          </footer> 
+            </div>
+          </section>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="scripts.js"></script>

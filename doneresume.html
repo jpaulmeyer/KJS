@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
 </head>
 <body>
+  <script>
+function getOption() {
+    document.getElementById("demo").innerHTML = 
+    sessionStorage.getItem("value");
+}
+</script>
+<p id="demo"></p>
         <nav class="navbar is-white">
                 <div class="container">
                   <div class="navbar-brand">
