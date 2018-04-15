@@ -22,14 +22,25 @@
           
     </section>
 </section>
+
 <script>
 function getOption() {
     var obj = document.getElementById("mySelect");
-    sessionStorage.setItem('value', obj.options[obj.selectedIndex].text)
-    console.log(sessionStorage('value'))
+    sessionStorage.setItem('industry', obj.options[obj.selectedIndex].text)
+    console.log(sessionStorage.getItem('industry'))
+}
+function myFunction() {
+    var x = document.getElementById("frm1");
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
+    }
+    sessionStorage.setItem('textboxTest', text)
+    console.log(text);
 }
 </script>
-
+<!--form for dropdown menu-->
 <form>
 Select your favorite fruit:
 <select id="mySelect">
@@ -41,6 +52,33 @@ Select your favorite fruit:
 <br><br>
 <input type="button" onclick="getOption()" value="Click Me!">
 </form>
+
+<!--form for textbox -->
+<form id="frm1" action="/action_page.php">
+  First name: <input type="text" name="fname" value="Donald"><br>
+  Last name: <input type="text" name="lname" value="Duck"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>Click "Try it" to display the value of each element in the form.</p>
+
+<button onclick="myFunction()">Try it</button>
+<!--form for textbox ends-->
+ <footer class="footer">
+                                <div class="container">
+                                  <div class="content has-text-centered">
+                                              <div class="buttons">
+                                                    <a href="skills.html">
+                                                      <span class="button is-dark">Back</span>
+                                                    </a>
+                                                    <a href="doneresume.html">
+                                                    <span class="button is-success">Save changes</span>
+                                                    </a>
+                                                  </div>
+                                  </div>
+                                </div>
+                              </footer>       
+
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
