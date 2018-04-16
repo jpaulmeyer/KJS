@@ -67,46 +67,48 @@
                                      </aside>
                                      </div>
                                    -->
-
-                                   <form id="frm1">
-  First name: <input type="text" name="fname" value="Donald"><br>
-  Last name: <input type="text" name="lname" value="Duck"><br><br>
-  <input type="submit" value="Submit">
-</form> 
-
-<p>Click "Try it" to display the value of each element in the form.</p>
-
-<button onclick="myFunction()">Try it</button>
+<script>
+  function myFunction() {
+    var x = document.getElementById("frm1");
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
+    }
+    sessionStorage.setItem('education', education)
+    console.log(education);
+  }
+</script>                                   
                   <form id="frm1">
                     <div class="container">
                       <section class="section">
                         <h1 class="title">High School</h1>   
                           <div class="control">
-                            <input class="input" type="text" placeholder="Name">
+                            <input class="input" type="text" name="highschool" placeholder="Name">
                           </div>
                           <div class="control">
-                            <input class="input" type="text" placeholder="Graduation Year">
+                            <input class="input" type="text" name="gradyear" placeholder="Graduation Year">
                           </div> 
                           <div class="control">
-                            <input class="input" type="text" placeholder="GPA">
+                            <input class="input" type="text" name="GPA" placeholder="GPA">
                           </div>                             
                         <h2 class="title">College</h2>
                           <div class="control">
-                            <input class="input" type="text" placeholder="Name">
+                            <input class="input" type="text" name="highschool" placeholder="Name">
                           </div>
                           <div class="control">
-                            <input class="input" type="text" placeholder="Graduation Year">
+                            <input class="input" type="text" name="gradyear" placeholder="Graduation Year">
                           </div> 
                           <div class="control">
-                            <input class="input" type="text" placeholder="GPA">
+                            <input class="input" type="text" name="GPA" placeholder="GPA">
                           </div>  
                           <div class="control">
-                            <input class="input" type="text" placeholder="Degree Received">
+                            <input class="input" type="text" name="degree" placeholder="Degree Received">
                           </div>  
                           <div class="control">
                             <input class="input" type="text" placeholder="Field of Study">
                           </div>  
-                        <h3 class="title">Additional College</h3>
+                      <!--  <h3 class="title">Additional College</h3>
                           <div class="control">
                             <input class="input" type="text" placeholder="Name">
                           </div>
@@ -131,7 +133,8 @@
                           </div> 
                           <div class="control">
                             <input class="input" type="text" placeholder="Certificate Recieved">
-                          </div>  
+                          </div>  -->
+                          <input type="submit" value="Submit">
                       </section>
                     </div>
                   </form>     
