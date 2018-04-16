@@ -80,8 +80,74 @@
                            <!--END SIDE NAV-->
        
     <!--BEGIN QUESTIONS-->
+       <!--LAYOUT COULD BE DID YOU EVER COMPLTE ANY OF THESE TASKS-->
 <div class="container">
 <div class="field">
+
+    <section class="section">
+      <!--PLAYING AROUND WITH MULTIPLE SELECTION
+      https://www.w3schools.com/js/tryit.asp?filename=try_dom_select_multiple-->
+      <script>
+          function selectMultiple() {
+              document.getElementById("mySelect").multiple = true;
+          }
+          </script>
+          </head>
+          <body>
+       
+              <p=>First click "Select multiple", then use ctrl+ to select.</p>
+          <form>
+              <div class="select is-dark">
+          <select id="mySelect" size="8">
+
+               <!--Trying to figure out how to add style-->
+            <option value="1">recruiting, training and supervising staff.</option>
+            <option value="2">agreeing and managing budgets/option>
+            <option value="3">ensuring compliance with licensing, hygiene and health and safety legislation/guidelines</option>
+            <option value="4">promoting and marketing the business</option>
+            <option value="5">handling customer enquiries and complaints</option>
+            <option value="6">preparing and presenting staffing/sales reports</option>
+            <option value="7">liaising with customers, employees, suppliers, licensing authorities and sales representatives</option>
+            <option value="8">making improvements to the running of the business and developing the restaurant</option>
+            
+          </select>
+          <input type="button" onclick="selectMultiple()" value="Select multiple">
+          </form>
+          
+          
+      
+          
+    <script>
+        function getOption() {
+            var obj = document.getElementById("mySelect");
+            sessionStorage.setItem('proudof', obj.options[obj.selectedIndex].text)
+            console.log(sessionStorage.getItem('proudof'))
+        }
+        function myFunction() {
+            var x = document.getElementById("frm1");
+            var text = "";
+            var i;
+            for (i = 0; i < x.length ;i++) {
+                text += x.elements[i].value + "<br>";
+            }
+            sessionStorage.setItem('textboxTest', text)
+            console.log(text);
+        }
+        </script>
+        <!--form for dropdown menu-->
+        <form>
+        Select all that apply:
+        <select id="mySelect">
+          <option>Retail</option>
+          <option>Technology</option>
+          <option>Agriculture</option>
+          <option>Real Estate</option>
+        </select>
+        <br><br>
+        <input type="button" onclick="getOption()" value="Submit">
+        </form>
+
+ <!--DON'T DELETE YET, FROM THE OLD PAGE
         <section class="section">
         <div class="control">
           <div class="select is-dark">
@@ -97,17 +163,19 @@
             <input type = "button" onclick = "myfunc()" value = "Submit">
           </div>
         </div>
-          <!--Maybe make this select somehow for Javascript-->
+      -->
+          <!--Maybe make this select somehow for Javascript
        <div class="control">
             <input class="input" type="text" placeholder="Text input">
             <input type = "button" onclick = "myfunc()" value = "Submit">
           </div>
       </div>
+    -->
        
-
+      <!--DON'T DELETE YET, FROM THE OLD PAGE
             <section class="section">
                     <div class="select is-dark">
-                        <!--NOTE NAME CHANGE FROM THE ABOVE OPTION-->
+                        
                             <select name="newSkill2" id="newSkill2">
                                 <option value="1">Select dropdown</option>
                                 <option value="2">Analyzed</option>
@@ -121,15 +189,20 @@
                           </div>
             <input class="input" type="text" placeholder="Text input">
             <input type = "button" onclick = "myfunc()" value = "Submit">
+        -->
 
-            <!--ADDING THIS FOR THE ADD MORE FUNCTIONALITY NOT IMPLEMENTED-->
+            <!--ADDING THIS FOR THE ADD MORE FUNCTIONALITY NOT IMPLEMENTED
             <input type = "button" onclick = "myfunc()" value = "Add more">
-            
+        -->   
+       
+              
           </div>
            
          </div> 
      </div>
         </section>
+
+        
          <!--HACK JOB FOR SPACING-->
         <section class="section">
                 <div class="container">
