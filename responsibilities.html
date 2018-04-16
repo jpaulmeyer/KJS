@@ -79,57 +79,80 @@
                            END SIDE NAV-->
        
     <!--BEGIN QUESTIONS-->
+<script>
+function getOption() {
+    var obj = document.getElementById("mySelect");
+    sessionStorage.setItem('industry', obj.options[obj.selectedIndex].text)
+    console.log(sessionStorage.getItem('industry'))
+} 
+function myFunction() {
+    var x = document.getElementById("frm1");
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
+    }
+    sessionStorage.setItem('textboxTest', text)
+    console.log(text);
+}
+</script> 
+
 <div class="container">
   <div class="field">
     <section class="section">
       <div class="control">
         <div class="select is-dark">
-          <select name="newSkill" id="newSkill">
-              <option value="1">Select dropdown</option>
-              <option value="2">Analyzed</option>
-              <option value="3">Coordinated</option>
-              <option value="4">Developed</option>
-              <option value="5">Designed</option>
-              <option value="6">Engineered</option>
-              <option value="7">Managed</option>
-          </select> 
-        <input type = "button" onclick = "myfunc()" value = "Submit">
+          <form>
+            <select name="newResponse" id="newResponse">
+                <option value="1">Select An Action</option>
+                <option value="2">Analyzed</option>
+                <option value="3">Coordinated</option>
+                <option value="4">Developed</option>
+                <option value="5">Designed</option>
+                <option value="6">Engineered</option>
+                <option value="7">Managed</option>
+            </select> 
+          <input type="button" onclick="getOption()" value="Submit">
+          </form>
       </div>
     </div>
-      <!--Maybe make this select somehow for Javascript-->
-    <div class="control">
-        <input class="input" type="text" placeholder="Text input">
-        <input type = "button" onclick = "myfunc()" value = "Submit">
-    </div>
+    <form id="frm1">
+      <div class="control">
+          <input class="input" type="text" placeholder="Tell us more!">
+          <input type = "button" onclick = "myFunction()" value = "Submit">
+      </div>
+    </form>  
   </div>
    
 
-            <section class="section">
-                    <div class="select is-dark">
-                        <!--NOTE NAME CHANGE FROM THE ABOVE OPTION-->
-                            <select name="newSkill2" id="newSkill2">
-                                <option value="1">Select dropdown</option>
-                                <option value="2">Analyzed</option>
-                                <option value="3">Coordinated</option>
-                                <option value="4">Developed</option>
-                                <option value="5">Designed</option>
-                                <option value="6">Engineered</option>
-                                <option value="7">Managed</option>
-                            </select> 
-                            <input type = "button" onclick = "myfunc()" value = "Submit">
-                          </div>
-            <input class="input" type="text" placeholder="Text input">
-            <input type = "button" onclick = "myfunc()" value = "Submit">
+    <section class="section">
+      <div class="control">
+        <div class="select is-dark">
+          <form>
+            <select name="newResponse" id="newResponse">
+                <option value="1">Select An Action</option>
+                <option value="2">Analyzed</option>
+                <option value="3">Coordinated</option>
+                <option value="4">Developed</option>
+                <option value="5">Designed</option>
+                <option value="6">Engineered</option>
+                <option value="7">Managed</option>
+            </select> 
+          <input type="button" onclick="getOption()" value="Submit">
+          </form>
+      </div>
+    </div>
+    <form id="frm1">
+      <div class="control">
+          <input class="input" type="text" placeholder="Tell us more!">
+          <input type = "button" onclick = "myfunc()" value = "Submit">
+      </div>
+    </form>  
+  </div>
 
-            <!--ADDING THIS FOR THE ADD MORE FUNCTIONALITY NOT IMPLEMENTED-->
+            <!--ADDING THIS FOR THE ADD MORE FUNCTIONALITY NOT IMPLEMENTED
             <input type = "button" onclick = "myfunc()" value = "Add more">
-            
-          </div>
-           
-         </div> 
-     </div>
-     
-    <div>
+            -->
         </section>
   <section class="section">
           <div class="container">
