@@ -81,19 +81,19 @@
     <!--BEGIN QUESTIONS-->
 <script>
 function getOption() {
-    var obj = document.getElementById("mySelect");
-    sessionStorage.setItem('industry', obj.options[obj.selectedIndex].text)
-    console.log(sessionStorage.getItem('industry'))
+    var responseOption = document.getElementById("newResponse");
+    sessionStorage.setItem('responseOption', response.options[response.selectedIndex].text)
+    console.log(sessionStorage.getItem('responseOption'))
 } 
 function myFunction() {
     var x = document.getElementById("frm1");
-    var text = "";
+    var response = "";
     var i;
     for (i = 0; i < x.length ;i++) {
-        text += x.elements[i].value + "<br>";
+        response += x.elements[i].value + "<br>";
     }
-    sessionStorage.setItem('textboxTest', text)
-    console.log(text);
+    sessionStorage.setItem('response', response)
+    console.log(response);
 }
 </script> 
 
