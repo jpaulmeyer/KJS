@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
 </head>
 <body>
-        <nav class="navbar is-white">
+      <!--  <nav class="navbar is-white">
                 <div class="container">
                   <div class="navbar-brand">
                     <a class="navbar-item">
@@ -36,7 +36,7 @@
                   </div>
                 </div>
             </nav>
-                 <!--END NAV-->
+                 END NAV-->
                  <section class="hero is-dark">
                         <div class="hero-body">
                           <div class="container">
@@ -50,7 +50,8 @@
                         </div>
                 </section>
             </section>
-                 <div class="container">
+           <!--      
+           <div class="container">
                         <div class="columns">
                             <div class="column is-3">
                             <aside class="menu">
@@ -67,33 +68,43 @@
                                            </ul>
                                          </aside>
                                     </div>
+    -->
+<script>
+function getOption() {
+    var responseOption = document.getElementById("newResponse");
+    sessionStorage.setItem('responseOption', response.options[response.selectedIndex].text)
+    console.log(sessionStorage.getItem('responseOption'))
+} 
+</script>
     
-    <div class="container">
-                <section class="section">
-                        <div class="columns">
-                            <div class="column is-3 is offset-2 is "></div>
-                                <div class="column">
-                                        <h1 class="title">Select all that apply</h1>
-                                      
-                                  <div class="select is-multiple">
-                                        <select name="addedSkill" id="addedSkill" multiple size="12">
-                                          <option value="1">Word</option>
-                                          <option value="2">Powerpoint</option>
-                                          <option value="3">Excel</option>
-                                          <option value="4">SQL</option>
-                                          <option value="5">Python</option>
-                                          <option value="6">Javascript</option>
-                                          <option value="7">Copywriting</option>
-                                          <option value="8">Event Planning</option>
-                                          <option value="9">SEO/SEM Marketing</option>
-                                          <option value="10">Bookkeeping</option>               
-                                        </select>  
-                                 </div>        
-                               </div>
-                           </div>
-                      
-                </section>
-    </div> 
+<div class="container">
+  <section class="section">
+    <div class="columns">
+      <div class="column is-3 is offset-2 is "></div>
+        <div class="column">
+          <h1 class="title">Select all that apply</h1>
+            <div class="select is-multiple">
+              <form> 
+                <select name="addedSkill" id="addedSkill" multiple size="12">
+                  <option value="1">Word</option>
+                  <option value="2">Powerpoint</option>
+                  <option value="3">Excel</option>
+                  <option value="4">SQL</option>
+                  <option value="5">Python</option>
+                  <option value="6">Javascript</option>
+                  <option value="7">Copywriting</option>
+                  <option value="8">Event Planning</option>
+                  <option value="9">SEO/SEM Marketing</option>
+                  <option value="10">Bookkeeping</option>               
+                </select> 
+                <input type="button" onclick="getOption()" value="Submit">
+              </form>  
+            </div>        
+        </div>
+    </div>
+  </section>
+</div> 
+   
     <section class="section">
             <div class="container">
                 
