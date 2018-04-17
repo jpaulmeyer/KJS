@@ -29,19 +29,11 @@ function getOption() {
     sessionStorage.setItem('industry', obj.options[obj.selectedIndex].text)
     console.log(sessionStorage.getItem('industry'))
 }
-function myFunction() {
-    var x = document.getElementById("frm1");
-    var text = "";
-    var i;
-    for (i = 0; i < x.length ;i++) {
-        text += x.elements[i].value + "<br>";
-    }
-    sessionStorage.setItem('textboxTest', text)
-    console.log(text);
-}
+
 </script>
 <!--form for dropdown menu-->
 <form>
+<<<<<<< HEAD
 Select your desired industry:
 <select id="mySelect">
   <option>Retail</option>
@@ -50,28 +42,31 @@ Select your desired industry:
   <option>Real Estate</option>
 </select>
 <br><br>
+=======
+  Select your desired industry:
+  <select id="mySelect">
+    <option>Administration</option>
+    <option>Agriculture</option>
+    <option>Broadcasting</option>
+    <option>Clothing/Retail</option>
+    <option>Retail</option>
+    <option>Technology</option>
+    <option>Agriculture</option>
+    <option>Real Estate</option>
+  </select>
+>>>>>>> 9c534fcfce2597dd12794158285cef850bd09ea9
 <input type="button" onclick="getOption()" value="Submit">
 </form>
 
-<!--form for textbox
-<form id="frm1" action="/action_page.php">
-  First name: <input type="text" name="fname" value="Type here"><br>
-  Last name: <input type="text" name="lname" value="Type here"><br><br>
-  <input type="submit" value="Submit">
-</form> 
 
-<p>Click "Try it" to display the value of each element in the form.</p>
-
-<button onclick="myFunction()">Try it</button>
- form for textbox ends-->
  <footer class="footer">
                                 <div class="container">
                                   <div class="content has-text-centered">
                                               <div class="buttons">
-                                                    <a href="education.html">
+                                                    <a href="/index.html">
                                                       <span class="button is-dark">Back</span>
                                                     </a>
-                                                    <a href="doneresume.html">
+                                                    <a href="/education.html">
                                                     <span class="button is-success">Continue</span>
                                                     </a>
                                                   </div>

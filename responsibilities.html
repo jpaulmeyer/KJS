@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsiblites</title>
+    <title>Responsiblities</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
 </head>
 <body>
-        <nav class="navbar is-white">
+      <!--  <nav class="navbar is-white">
                 <div class="container">
                   <div class="navbar-brand">
                     <a class="navbar-item">
@@ -36,24 +36,23 @@
                   </div>
                 </div>
             </nav>
-             <!--END NAV-->
+             END NAV-->
                <!--BEGIN TITLE-->
     <section class="hero is-dark">
-            <div class="hero-body">
-              <div class="container">
-                <h1 class="title">
-                   What were some of your responsiblites?
-                </h1>  
-                <h2 class="subtitle">
-                    Position 1
-                </h2>  
-              </div> 
-            </div>
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+           What were some of your responsiblites?
+          </h1>  
+          <h2 class="subtitle">
+            Position 1
+          </h2>  
+        </div> 
+      </div>     
     </section>
-</section>
   <!--END TITLE-->
 
-    <!--BEGIN SIDE NAV-->
+    <!--BEGIN SIDE NAV
 <div class="container">
 <div class="block">
         <div class="columns">
@@ -77,16 +76,35 @@
                            </ul>
                          </aside>
                          </div>
-                           <!--END SIDE NAV-->
+                           END SIDE NAV-->
        
     <!--BEGIN QUESTIONS-->
+<script>
+function getOption() {
+    var responseOption = document.getElementById("newResponse");
+    sessionStorage.setItem('responseOption', responseOption.options[responseOption.selectedIndex].text)
+    console.log(sessionStorage.getItem('responseOption'))
+} 
+function myFunction() {
+    var x = document.getElementById("frm1");
+    var response = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        response += x.elements[i].value + "<br>";
+    }
+    sessionStorage.setItem('response', response)
+    console.log(response);
+}
+</script> 
+
 <div class="container">
-<div class="field">
-        <section class="section">
-        <div class="control">
-          <div class="select is-dark">
-            <select name="newSkill" id="newSkill">
-                <option value="1">Select dropdown</option>
+  <div class="field">
+    <section class="section">
+      <div class="control">
+        <div class="select is-dark">
+          <form>
+            <select name="newResponse" id="newResponse">
+                <option >Select An Action</option>
                 <option value="2">Analyzed</option>
                 <option value="3">Coordinated</option>
                 <option value="4">Developed</option>
@@ -94,43 +112,47 @@
                 <option value="6">Engineered</option>
                 <option value="7">Managed</option>
             </select> 
-            <input type = "button" onclick = "myfunc()" value = "Submit">
-          </div>
-        </div>
-          <!--Maybe make this select somehow for Javascript-->
-       <div class="control">
-            <input class="input" type="text" placeholder="Text input">
-            <input type = "button" onclick = "myfunc()" value = "Submit">
-          </div>
+          <!--<input type="button" onclick="getOption()" value= "Submit">-->
+          </form>
       </div>
-       
-
-            <section class="section">
-                    <div class="select is-dark">
-                        <!--NOTE NAME CHANGE FROM THE ABOVE OPTION-->
-                            <select name="newSkill2" id="newSkill2">
-                                <option value="1">Select dropdown</option>
-                                <option value="2">Analyzed</option>
-                                <option value="3">Coordinated</option>
-                                <option value="4">Developed</option>
-                                <option value="5">Designed</option>
-                                <option value="6">Engineered</option>
-                                <option value="7">Managed</option>
-                            </select> 
-                            <input type = "button" onclick = "myfunc()" value = "Submit">
-                          </div>
-            <input class="input" type="text" placeholder="Text input">
-            <input type = "button" onclick = "myfunc()" value = "Submit">
-
-            <!--ADDING THIS FOR THE ADD MORE FUNCTIONALITY NOT IMPLEMENTED-->
+    </div>
+    <form id="frm1">
+      <div class="control">
+          <input class="input" type="text" placeholder="Tell us more!">
+      </div>
+    </form>  
+    <button onclick="getOption();myFunction()">Submit</button>   
+  </div>
+   
+<!--
+    <section class="section">
+      <div class="control">
+        <div class="select is-dark">
+          <form>
+            <select name="newResponse" id="newResponse">
+                <option value="1">Select An Action</option>
+                <option value="2">Analyzed</option>
+                <option value="3">Coordinated</option>
+                <option value="4">Developed</option>
+                <option value="5">Designed</option>
+                <option value="6">Engineered</option>
+                <option value="7">Managed</option>
+            </select> 
+          <input type="button" onclick="getOption()" value="Submit">
+          </form>
+      </div>
+    </div>
+    <form id="frm1">
+      <div class="control">
+          <input class="input" type="text" placeholder="Tell us more!">
+          <input type = "button" onclick = "myFunction()" value = "Submit">
+      </div>
+    </form>  
+  </div>
+-->
+            <!--ADDING THIS FOR THE ADD MORE FUNCTIONALITY NOT IMPLEMENTED
             <input type = "button" onclick = "myfunc()" value = "Add more">
-            
-          </div>
-           
-         </div> 
-     </div>
-     
-    <div>
+            -->
         </section>
   <section class="section">
           <div class="container">
@@ -143,14 +165,10 @@
                                                     <div class="container">
                                                       <div class="content has-text-centered">
                                                                   <div class="buttons">
-                                                                        <!--Changed sheet to past not detailspast-->
                                                                         <a href="/detailpast.html">
                                                                           <span class="button is-dark">Back</span>
-                                                                        <a href="/responsibilities.html">
-                                                                          <span class="button is-success">Save changes</span>
-                                                                        </a>
-                                                                        <a href="/proudof.html">
-                                                                          <span class="button is-info">Save and continue</span>
+                                                                        <a href="/skills.html">
+                                                                          <span class="button is-info">Continue</span>
                                                                         </a>
                                                                       </div>
                                                       </div>

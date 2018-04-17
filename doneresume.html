@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PDFExampleResume</title>
+    <title>Your Resume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
 </head>
 <body onload="printOption()">
@@ -23,12 +23,13 @@
               </section>
         <script>
                   function printOption() {
-                  document.getElementById("demo").innerHTML = 
-                  sessionStorage.getItem("industry") + sessionStorage.getItem("textboxtTest");
+                  document.getElementById("resume").innerHTML =
+                  "Resume for: "+sessionStorage.getItem("industry")+"<br>"+"<br>"+"Education:"+"<br>"
+                  +sessionStorage.getItem("education")+"<br>"+"Work Experience:"+"<br>"+sessionStorage.getItem("position")+"<br>"+sessionStorage.getItem("responsibilities")+sessionStorage.getItem("responseOption")+ " "+sessionStorage.getItem("response")+"<br>"+"Skills:"+"<br>"+sessionStorage.getItem("skills");
                 }
         </script>
-        <p id="demo"> Resume for: </p>
-                    
+    <div id="resume">
+    </div>   
                         <footer class="footer">
                                 <div class="container">
                                   <div class="content has-text-centered">

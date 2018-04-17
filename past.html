@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
 </head>
 <body>
+      <!--
         <nav class="navbar is-white">
                 <div class="container">
                   <div class="navbar-brand">
@@ -36,7 +37,7 @@
                   </div>
                 </div>
             </nav>
-            <!--END TOP NAV-->
+            END TOP NAV-->
               <!--BEGIN TITLE-->
         <section class="hero is-dark">
                 <div class="hero-body">
@@ -47,7 +48,7 @@
                   </div>
                 </div>
               </section>
-                <!--END TITLE-->
+                <!--END TITLE-
         
             <div class="container">
                     <div class="columns">
@@ -66,58 +67,59 @@
                                        </ul>
                                      </aside>
                                      </div>
-                                       <!--END SIDE NAV-->
+                                       END SIDE NAV-->
+<!--BEGIN POSITIONS-->  
+<script>
+  function myFunction() {
+    var x = document.getElementById("frm1");
+    var position = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        position += x.elements[i].value + " ";
+    }
+    sessionStorage.setItem('position', position)
+    console.log(position);
+  }
+</script>  
 
-                      <!--BEGIN POSITIONS-->                   
-                    <div class="container">
-                    <section class="section">
-                    <h1 class="title">Position 1</h1>   
-                  <div class="control">
-                        <input class="input" type="text" placeholder="Company Name">
-                      </div>
-                      <div class="control">
-                            <input class="input" type="text" placeholder="Role Title">
-                        </div> 
-                        <div class="control">
-                                <input class="input" type="text" placeholder="Dates Employed">
-                                <!--NOT IMPLEMENTED-->
-                                <input type="#" class="button is-info is-small" onclick = "myfunc()" value = "Submit"> 
-                            </div>   
-                                                    
-                          <h2 class="title">Position 2</h2>
-                          <div class="control">
-                                <input class="input" type="text" placeholder="Company Name">
-                              </div>
-                              <div class="control">
-                                    <input class="input" type="text" placeholder="Role Title">
-                                </div> 
-                                <div class="control">
-                                        <input class="input" type="text" placeholder="Dates Employed">
-                                        <!--NOT IMPLEMENTED-->
-                                        <input type="#" class="button is-info is-small" onclick = "myfunc()" value = "Submit"> 
-                                    </div>  
-                    
-                              <h3 class="title">Position 3</h3>
-                              <div class="control">
-                                    <input class="input" type="text" placeholder="Company Name">
-                                  </div>
-                                  <div class="control">
-                                        <input class="input" type="text" placeholder="Role Title">
-                                    </div> 
-                                    <div class="control">
-                                            <input class="input" type="text" placeholder="Dates Employed">
-                                        </div>  
-            <!--NOT IMPLEMENTED-->
-                <input type="#" class="button is-info is-small" onclick = "myfunc()" value = "Submit"> 
-                <input type="#" class="button is-dark is-small" onclick = "myfunc()" value = "Add More">
-                            </div>
-                          </div>
-                            
-                          </section>
-                        </div>
-                       
-                      
-                        </div>  
+  <form id="frm1">               
+    <div class="container">
+      <section class="section">
+        <h1 class="title">Position 1</h1>   
+          <div class="control">
+            <input class="input" type="text" placeholder="Company Name">
+          </div>
+          <div class="control">
+            <input class="input" type="text" placeholder="Role Title">
+          </div> 
+          <div class="control">
+            <input class="input" type="text" placeholder="Dates Employed">
+          </div>   
+      <!--  <h2 class="title">Position 2</h2>
+          <div class="control">
+            <input class="input" type="text" placeholder="Company Name">
+          </div>
+          <div class="control">
+            <input class="input" type="text" placeholder="Role Title">
+          </div> 
+          <div class="control">
+            <input class="input" type="text" placeholder="Dates Employed">
+          </div>  
+        <h3 class="title">Position 3</h3>
+          <div class="control">
+            <input class="input" type="text" placeholder="Company Name">
+          </div>
+          <div class="control">
+            <input class="input" type="text" placeholder="Role Title">
+          </div> 
+          <div class="control">
+            <input class="input" type="text" placeholder="Dates Employed">
+          </div>    -->
+      </section>
+    </div>
+  </form>                     
+<button onclick="myFunction()">Submit</button>                      
+
                         <footer class="footer">
                                 <div class="container">
                                   <div class="content has-text-centered">
@@ -125,11 +127,8 @@
                                                     <a href="education.html">
                                                     <span class="button is-dark">Back</span>
                                                     </a>
-                                                    <a href="past.html">
-                                                    <span class="button is-success">Save changes</span>
-                                                    </a>
                                                     <a href="detailpast.html">
-                                                    <span class="button is-info">Save and continue</span>
+                                                    <span class="button is-info">Continue</span>
                                                     </a>
                                                   </div>
                                   </div>
