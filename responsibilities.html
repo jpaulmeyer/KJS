@@ -82,7 +82,7 @@
 <script>
 function getOption() {
     var responseOption = document.getElementById("newResponse");
-    sessionStorage.setItem('responseOption', response.options[response.selectedIndex].text)
+    sessionStorage.setItem('responseOption', responseOption.options[responseOption.selectedIndex].text)
     console.log(sessionStorage.getItem('responseOption'))
 } 
 function myFunction() {
@@ -112,19 +112,19 @@ function myFunction() {
                 <option value="6">Engineered</option>
                 <option value="7">Managed</option>
             </select> 
-          <input type="button" onclick="getOption()" value= "Submit">
+          <!--<input type="button" onclick="getOption()" value= "Submit">-->
           </form>
       </div>
     </div>
-    <!--<form id="frm1">
+    <form id="frm1">
       <div class="control">
           <input class="input" type="text" placeholder="Tell us more!">
-          <input type = "button" onclick = "myFunction()" value = "Submit">
       </div>
     </form>  
+    <button onclick="getOption();myFunction()">Submit</button>   
   </div>
    
-
+<!--
     <section class="section">
       <div class="control">
         <div class="select is-dark">
