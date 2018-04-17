@@ -24,11 +24,11 @@
         <script>
                   function printOption() {
                   document.getElementById("resume").innerHTML = 
-                  sessionStorage.getItem("industry") + sessionStorage.getItem("textboxtTest");
+                  "Resume for:" + sessionStorage.getItem("industry") + sessionStorage.getItem("textboxtTest") + "</b>"
+                  + sessionStorage.getItem("education") + sessionStorage.getItem("position") + sessionStorage.getItem("responsibilities") + sessionStorage.getItem("skills");
                 }
         </script>
     <div id="resume">
-      Resume for: 
     </div>   
                         <footer class="footer">
                                 <div class="container">
