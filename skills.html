@@ -71,12 +71,12 @@
     -->
 <script>
 function getOption() {
-    var responseOption = document.getElementById("newResponse");
-    sessionStorage.setItem('responseOption', response.options[response.selectedIndex].text)
-    console.log(sessionStorage.getItem('responseOption'))
+    var skills = document.getElementById("addedSkill");
+    sessionStorage.setItem('skills', skills.options[skills.selectedIndex].text)
+    console.log(sessionStorage.getItem('skills'))
 } 
 </script>
-    
+
 <div class="container">
   <section class="section">
     <div class="columns">
@@ -105,62 +105,29 @@ function getOption() {
   </section>
 </div> 
    
-    <section class="section">
-            <div class="container">
-                
-                    <section class="section">
-                            <div class="container">
-                                
-                                    <section class="section">
-                                            <div class="container">
-                                             
-  
-          <section class="section">
-                <div class="container">
-                </div>
-           
-        </section>
-                <section class="section">
-                        <div class="container">
-                        </div>
-                    
-                </section>
-                        <section class="section">
-                                <div class="container">
-                                </div>
-              </section>
-    <section class="section">
-            <div class="container">
-              
-            </div>
-          </section>
-          <!--SYNTAX IS WRONG HERE BECAUSE THE BUTTONS ARE SHIFTED RIGHT, IT'S THE DIV BUT NOT SURE WHICH ONE-->
-    <section class="section">
-            <div class="container">
-                    <footer class="footer">
-                            <div class="container">
-                              <div class="content has-text-centered">
-                                          <div class="buttons">
-                                                <a href="/past.html">
-                                                  <span class="button is-dark">Back</span>
-                                                </a>
-                                                <a href="/skills.html">
-                                                  <span class="button is-success">Save changes</span>
-                                                </a>
-                                                <a href="/doneresume.html">
-                                                  <span class="button is-info">Save and continue</span>
-                                                </a>
-                                              </div>
-                              </div>
-                            </div>
-                          </footer> 
-            </div>
-          </section>
-   
-    
-
-          
-
+<section class="section">
+  <div class="container">
+    <div>
+</section>
+<section class="section">
+  <div class="container">
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <div class="buttons">
+            <a href="/responsibilities.html">
+              <span class="button is-dark">Back</span>
+            <a href="/doneresume.html">
+              <span class="button is-info">Continue</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer> 
+  </div>
+</section>
+                           
+                         
  
 </body>
 </html>
