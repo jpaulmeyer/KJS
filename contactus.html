@@ -57,13 +57,27 @@
                 </div>
               </section>
 
+               <!--START OF CONTACT US FORM-->
+               <script>
+                  function myFunction() {
+                    var x = document.getElementById("jscontact");
+                    var contact = "";
+                    var i;
+                    for (i = 0; i < x.length ;i++) {
+                        contact += x.elements[i].value + "<br>";
+                    }
+                    sessionStorage.setItem('contact', contact)
+                    console.log(contact);
+                  }
+                </script>                                   
+              <form id="jscontact">
               <div class="container">
               <div class="field">
                 <div class="section">
                   <div class="field">
                   <label class="label">Name</label>
                   <div class="control">
-                    <input class="input" type="text" placeholder="Text input">
+                    <input class="input" type="text" name="name" placeholder="Text input">
                   </div>
                 </div>
                 
@@ -72,7 +86,7 @@
                 <div class="field">
                     <label class="label">Email</label>
                     <div class="control">
-                      <input class="input" type="text" placeholder="Email input">
+                      <input class="input" type="text" name="email" placeholder="Email input">
                       <span class="icon is-small is-left">
                         <i class="fa fa-envelope"></i>
                       </span>
@@ -86,14 +100,17 @@
                   <div class="field">
                     <label class="label">Message</label>
                     <div class="control">
-                      <textarea class="textarea" placeholder="Type your message here"></textarea>
+                      <textarea class="textarea" name="message" placeholder="Type your message here"></textarea>
                     </div>
-                  </div>
+                  </section>
+                </div>
+              </form>     
+           
    
                   <footer class="footer">
                   <div class="field is-grouped">
                     <div class="control">
-                      <button class="button is-primary">Submit</button>
+                      <button class="button is-primary" onclick="myFunction()">Submit</button>
                     </div>
                     <div class="control">
                       <button class="button is-link">Cancel</button>
@@ -104,12 +121,14 @@
                         </a>
                       </div>
                   </div>   
-                </div>             
+                </div>  
+                       
                     
                  
                                   </div>
                                 </div>
-                              </footer>       
+                              </footer>  
+                            </div>     
 
     
 </body>
