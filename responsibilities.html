@@ -84,7 +84,7 @@
       
      
          <!--NEED TO BE FORMATTED TO LOOK BETTER-->
-      <button class="accordion">Tips on what to say</button>
+      <button class="accordion">Tips on what to say!</button>
       <div class="panel">
         <p>
             Focus on quantifying your accomplishments and skills. Your accomplishment statements are the best way to showcase the amazing
@@ -177,8 +177,24 @@ function myFunction() {
           <input class="input" type="text" placeholder="Tell us more!">
       </div>
     </form>  
+
+
+   <!--TRYING TO ADD A POP UP TO TELL THE PERSON TO DO BETTER ON THE RESPONSE-->
+    <script type="text/javascript">
+    
+         function Warn() {
+            alert ("Score: 3/5. Your response is pretty good but we think you can make it better! Try adding at least 1 more number to quantify your accomplishments!After editing press submit");
+            
+         }
+     
+   </script>
+   <form>
+      <input type="button" value="Get your response score" onclick="Warn();" />
+   </form>
+<!--THE ORIGINAL BUTTON-->
     <button onclick="getOption();myFunction()">Submit</button>   
   </div>
+  
 
 
 
@@ -227,6 +243,20 @@ function myFunction() {
                 <input class="input" type="text" placeholder="Tell us more!">
             </div>
           </form>  
+
+ <!--TRYING TO ADD A POP UP TO TELL THE PERSON TO DO BETTER ON THE RESPONSE-->
+ <script type="text/javascript">
+    
+  function Warn() {
+     alert ("Score: 5/5. Your response is fantastic! Now you can press submit");
+     
+  }
+
+</script>
+<form>
+<input type="button" value="Get your response score" onclick="Warn();" />
+</form>
+
           <button onclick="getOption();myFunction()">Submit</button>   
         </div>
    
