@@ -71,21 +71,21 @@
 <!--BEGIN POSITIONS-->  
 <script>
   function myFunction() {
-    var x = document.getElementById("frm1");
-    var position = "";
+    var x = document.getElementById("frm2");
+    var position2 = "";
     var i;
     for (i = 0; i < x.length ;i++) {
         position += x.elements[i].value + " ";
     }
-    sessionStorage.setItem('position', position)
-    console.log(position);
+    sessionStorage.setItem('position', position2)
+    console.log(position2);
   }
 </script>  
 
-  <form id="frm1">               
+  <form id="frm2">               
     <div class="container">
       <section class="section">
-        <h1 class="title">Position 1</h1>   
+        <h1 class="title">Position 2</h1>   
           <div class="control">
             <input class="input" type="text" placeholder="Company Name">
           </div>
@@ -95,26 +95,7 @@
           <div class="control">
             <input class="input" type="text" placeholder="Dates Employed">
           </div>   
-      <!--  <h2 class="title">Position 2</h2>
-          <div class="control">
-            <input class="input" type="text" placeholder="Company Name">
-          </div>
-          <div class="control">
-            <input class="input" type="text" placeholder="Role Title">
-          </div> 
-          <div class="control">
-            <input class="input" type="text" placeholder="Dates Employed">
-          </div>  
-        <h3 class="title">Position 3</h3>
-          <div class="control">
-            <input class="input" type="text" placeholder="Company Name">
-          </div>
-          <div class="control">
-            <input class="input" type="text" placeholder="Role Title">
-          </div> 
-          <div class="control">
-            <input class="input" type="text" placeholder="Dates Employed">
-          </div>    -->
+   
           <div class="buttons">
               <a href="past2.html">
               <span class="button is-dark">Add another position</span>
