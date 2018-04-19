@@ -52,6 +52,62 @@
     </section>
   <!--END TITLE-->
 
+
+  <!--Adding tips. should probably be better formatted-->
+  <style>
+      .accordion {
+          background-color: #eee;
+          color: #444;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+          transition: 0.4s;
+      }
+      
+      .active, .accordion:hover {
+          background-color: #ccc; 
+      }
+      
+      .panel {
+          padding: 0 18px;
+          display: none;
+          background-color: white;
+          overflow: hidden;
+      }
+      </style>
+      </head>
+      <body>
+      
+     
+         <!--NEED TO BE FORMATTED TO LOOK BETTER-->
+      <button class="accordion">Tips on what to say</button>
+      <div class="panel">
+        <p>
+            Focus on quantifying your accomplishments and skills. Your accomplishment statements are the best way to showcase the amazing
+            things you’ve done at your past jobs, plus show prospective employers what you can do for them.
+        </p>
+      </div>  
+      <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+          
+          for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var panel = this.nextElementSibling;
+                  if (panel.style.display === "block") {
+                      panel.style.display = "none";
+                  } else {
+                      panel.style.display = "block";
+                  }
+              });
+          }
+          </script>
+
     <!--BEGIN SIDE NAV
 <div class="container">
 <div class="block">
@@ -123,6 +179,56 @@ function myFunction() {
     </form>  
     <button onclick="getOption();myFunction()">Submit</button>   
   </div>
+
+
+
+  <!--ADDED SECOND TEXT OPTION AND CHANGED THE ELEMENT ID, NOT SURE IT IT PRINTS-->
+
+  <script>
+      function getOption() {
+          var responseOption2 = document.getElementById("newResponse2");
+          sessionStorage.setItem('responseOption2', responseOption2.options[responseOption2.selectedIndex].text)
+          console.log(sessionStorage.getItem('responseOption2'))
+      } 
+      function myFunction() {
+          var x = document.getElementById("frm3");
+          var response2 = "";
+          var i;
+          for (i = 0; i < x.length ;i++) {
+              response2 += x.elements[i].value + "<br>";
+          }
+          sessionStorage.setItem('response', response2)
+          console.log(response2);
+      }
+      </script> 
+      
+      <div class="container">
+        <div class="field">
+          <section class="section">
+            <div class="control">
+              <div class="select is-dark">
+                <form>
+                  <select name="newResponse2" id="newResponse2">
+                      <option >Select An Action</option>
+                      <option value="2">Analyzed</option>
+                      <option value="3">Coordinated</option>
+                      <option value="4">Developed</option>
+                      <option value="5">Designed</option>
+                      <option value="6">Engineered</option>
+                      <option value="7">Managed</option>
+                  </select> 
+                <!--<input type="button" onclick="getOption()" value= "Submit">-->
+                </form>
+            </div>
+          </div>
+
+          <form id="frm3">
+            <div class="control">
+                <input class="input" type="text" placeholder="Tell us more!">
+            </div>
+          </form>  
+          <button onclick="getOption();myFunction()">Submit</button>   
+        </div>
    
 <!--
     <section class="section">
@@ -165,6 +271,9 @@ function myFunction() {
                                                     <div class="container">
                                                       <div class="content has-text-centered">
                                                                   <div class="buttons">
+                                                                      <a href="contactus.html">
+                                                                          <span class="button is-danger">Help</span>
+                                                                          </a>
                                                                         <a href="/detailpast.html">
                                                                           <span class="button is-dark">Back</span>
                                                                         <a href="/skills.html">
