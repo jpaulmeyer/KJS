@@ -138,18 +138,28 @@
 <script>
 function getOption() {
     var responseOption = document.getElementById("newResponse");
+    var responseOption2 = document.getElementById("newResponse2");
     sessionStorage.setItem('responseOption', responseOption.options[responseOption.selectedIndex].text)
+    sessionStorage.setItem('responseOption2', responseOption2.options[responseOption2.selectedIndex].text)
     console.log(sessionStorage.getItem('responseOption'))
+    console.log(sessionStorage.getItem('responseOption2'))
 } 
 function myFunction() {
     var x = document.getElementById("frm1");
+    var y = document.getElementById("frm2");
     var response = "";
+    var response2 = "";
     var i;
     for (i = 0; i < x.length ;i++) {
         response += x.elements[i].value + "<br>";
     }
+    for (i = 0; i < y.length ;i++) {
+        response2 += y.elements[i].value + "<br>";
+    }
     sessionStorage.setItem('response', response)
+    sessionStorage.setItem('response2', response2)
     console.log(response);
+    console.log(response2);
 }
 </script> 
 
@@ -168,7 +178,6 @@ function myFunction() {
                 <option value="6">Engineered</option>
                 <option value="7">Managed</option>
             </select> 
-          <!--<input type="button" onclick="getOption()" value= "Submit">-->
           </form>
       </div>
     </div>
@@ -177,7 +186,22 @@ function myFunction() {
           <input class="input" type="text" placeholder="Tell us more!">
       </div>
     </form>  
-
+          <form>
+            <select name="newResponse2" id="newResponse2">
+                <option >Select An Action</option>
+                <option value="2">Analyzed</option>
+                <option value="3">Coordinated</option>
+                <option value="4">Developed</option>
+                <option value="5">Designed</option>
+                <option value="6">Engineered</option>
+                <option value="7">Managed</option>
+            </select> 
+          </form>
+    <form id="frm2">
+      <div class="control">
+          <input class="input" type="text" placeholder="Tell us more!">
+      </div>
+    </form>  
 
    <!--TRYING TO ADD A POP UP TO TELL THE PERSON TO DO BETTER ON THE RESPONSE-->
     <script type="text/javascript">
@@ -188,61 +212,15 @@ function myFunction() {
          }
      
    </script>
+   <!--THE ORIGINAL BUTTON-->
+   <button onclick="getOption();myFunction()">Submit</button>
    <form>
       <input type="button" value="Get your response score" onclick="Warn();" />
    </form>
-<!--THE ORIGINAL BUTTON-->
-    <button onclick="getOption();myFunction()">Submit</button>   
+
+       
   </div>
-  
-
-
-
-  <!--ADDED SECOND TEXT OPTION AND CHANGED THE ELEMENT ID, NOT SURE IT IT PRINTS-->
-
-  <script>
-      function getOption() {
-          var responseOption2 = document.getElementById("newResponse2");
-          sessionStorage.setItem('responseOption2', responseOption2.options[responseOption2.selectedIndex].text)
-          console.log(sessionStorage.getItem('responseOption2'))
-      } 
-      function myFunction() {
-          var x = document.getElementById("frm3");
-          var response2 = "";
-          var i;
-          for (i = 0; i < x.length ;i++) {
-              response2 += x.elements[i].value + "<br>";
-          }
-          sessionStorage.setItem('response', response2)
-          console.log(response2);
-      }
-      </script> 
-      
-      <div class="container">
-        <div class="field">
-          <section class="section">
-            <div class="control">
-              <div class="select is-dark">
-                <form>
-                  <select name="newResponse2" id="newResponse2">
-                      <option >Select An Action</option>
-                      <option value="2">Analyzed</option>
-                      <option value="3">Coordinated</option>
-                      <option value="4">Developed</option>
-                      <option value="5">Designed</option>
-                      <option value="6">Engineered</option>
-                      <option value="7">Managed</option>
-                  </select> 
-                <!--<input type="button" onclick="getOption()" value= "Submit">-->
-                </form>
-            </div>
-          </div>
-
-          <form id="frm3">
-            <div class="control">
-                <input class="input" type="text" placeholder="Tell us more!">
-            </div>
-          </form>  
+    
 
  <!--TRYING TO ADD A POP UP TO TELL THE PERSON TO DO BETTER ON THE RESPONSE-->
  <script type="text/javascript">
@@ -253,12 +231,6 @@ function myFunction() {
   }
 
 </script>
-<form>
-<input type="button" value="Get your response score" onclick="Warn();" />
-</form>
-
-          <button onclick="getOption();myFunction()">Submit</button>   
-        </div>
    
 <!--
     <section class="section">
