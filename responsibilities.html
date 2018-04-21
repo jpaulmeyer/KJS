@@ -218,26 +218,6 @@ function myFunction() {
       <input type="button" value="Get your response score" onclick="Warn();" />
    </form>
 
-
-  <!--ADDED SECOND TEXT OPTION AND CHANGED THE ELEMENT ID, NOT SURE IT IT PRINTS-->
-
-  <script>
-      function getOption() {
-          var responseOption2 = document.getElementById("newResponse2");
-          sessionStorage.setItem('responseOption2', responseOption2.options[responseOption2.selectedIndex].text)
-          console.log(sessionStorage.getItem('responseOption2'))
-      } 
-      function myFunction() {
-          var x = document.getElementById("frm3");
-          var response2 = "";
-          var i;
-          for (i = 0; i < x.length ;i++) {
-              response2 += x.elements[i].value + "<br>";
-          }
-          sessionStorage.setItem('response', response2)
-          console.log(response2);
-      }
-      </script> 
       
       
       <div class="container">
