@@ -10,15 +10,51 @@
 </head>
 <body>
 
-  <section class="hero is-dark">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-          What industry are you interested in?
-        </h1> 
-      </div>
-    </div>
-  </section>
+ <nav class="navbar is-black">
+                <div class="container">
+                  <div class="navbar-brand">
+                    <a class="navbar-item" href="index.html">
+                      <img src="http://alanstevens.io/media/icon_resume.gif" alt="Logo">
+                    </a>
+                    <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                  </div>
+                  <div id="navbarMenuHeroC" class="navbar-menu">
+                    <div class="navbar-start">
+                      <a class="navbar-item" href="doneresume.html">
+                        Your Resume
+                      </a>
+                      <nav class="navbar is-black" role="navigation" aria-label="dropdown navigation">
+                        <div class="navbar-item has-dropdown is-hoverable">
+                          <a class="navbar-link">
+                            Jump To
+                          </a>
+                          <div class="navbar-dropdown">
+                            <a class="navbar-item" href="education.html">
+                              Education
+                            </a>
+                            <a class="navbar-item" href="past.html">
+                              Roles
+                            </a>
+                            <a class="navbar-item" href="responsibilities.html">
+                              Responsibilities
+                            </a>
+                            <a class="navbar-item" href="skills.html" >
+                              Skills
+                            </a>
+                          </div>
+                        </div>
+                      </nav>
+                      <a class="navbar-item" href="contactus.html">
+                        Contact Us
+                      </a>
+                    </div>
+                  </div> 
+              </div> 
+            </nav>
 
   <script>
   function getOption() {
@@ -35,7 +71,7 @@
   <div class="container" style="text-align: center">
     <section class="section">
       <form>
-        <h1 class="title">Select your desired industry:</h1>
+        <h1 class="title">Tell Us About: <br/> Where You're Applying</h1>
         <select id="mySelect">
           <option>Select dropdown</option>
           <option>Administration</option>
@@ -48,7 +84,7 @@
           <option>Real Estate</option>
         </select>
       </form>
-          <a href="/index.html">
+          <a href="index.html">
             <span class="button is-dark">Back</span>
           </a> 
           <span class="button is-danger" onclick="interestHelp()">Help</span> 

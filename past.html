@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
 </head>
 <body>
-      <!--
-        <nav class="navbar is-white">
+      <nav class="navbar is-black">
                 <div class="container">
                   <div class="navbar-brand">
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="index.html">
                       <img src="http://alanstevens.io/media/icon_resume.gif" alt="Logo">
                     </a>
                     <span class="navbar-burger burger" data-target="navbarMenuHeroC">
@@ -22,52 +21,38 @@
                     </span>
                   </div>
                   <div id="navbarMenuHeroC" class="navbar-menu">
-                    <div class="navbar-end">
-                      <a class="navbar-item">
-                        Home
+                    <div class="navbar-start">
+                      <a class="navbar-item" href="doneresume.html">
+                        Your Resume
                       </a>
-                      <a class="navbar-item">
-                        Profile
+                      <nav class="navbar is-black" role="navigation" aria-label="dropdown navigation">
+                        <div class="navbar-item has-dropdown is-hoverable">
+                          <a class="navbar-link">
+                            Jump To
+                          </a>
+                          <div class="navbar-dropdown">
+                            <a class="navbar-item" href="education.html">
+                              Education
+                            </a>
+                            <a class="navbar-item" href="past.html">
+                              Roles
+                            </a>
+                            <a class="navbar-item" href="responsibilities.html">
+                              Responsibilities
+                            </a>
+                            <a class="navbar-item" href="skills.html" >
+                              Skills
+                            </a>
+                          </div>
+                        </div>
+                      </nav>
+                      <a class="navbar-item" href="contactus.html">
+                        Contact Us
                       </a>
-                      <a class="navbar-item">
-                        Examples
-                      </a>
-                     
                     </div>
-                  </div>
-                </div>
+                  </div> 
+              </div> 
             </nav>
-            END TOP NAV-->
-              <!--BEGIN TITLE-->
-        <section class="hero is-dark">
-                <div class="hero-body">
-                  <div class="container">
-                    <h1 class="title">
-                     Now tell us about your past experiences
-                    </h1>
-                  </div>
-                </div>
-              </section>
-                <!--END TITLE-
-        
-            <div class="container">
-                    <div class="columns">
-                        <div class="column is-3">
-                        <aside class="menu">
-                                <p class="menu-label">
-                                    Navigate
-                                   </p>
-                                       <ul class="menu-list">
-                                               <li>
-                                                       <a class="is-active">Past Experiences</a>
-                                                     </li>
-                                         <li><a>Education</a></li>
-                                         <li><a>Skills</a></li>
-                                         <li><a>Other</a></li>
-                                       </ul>
-                                     </aside>
-                                     </div>
-                                       END SIDE NAV-->
 <!--BEGIN POSITIONS-->  
 <script>
   function myFunction() {
@@ -88,7 +73,8 @@
   <div class="container" style="text-align: center">
     <section class="section">
       <form id="frm1">
-        <h1 class="title">Position 1</h1>   
+        <h1 class="title">Tell Us About: <br/> Your Past</h1>
+        <h2 class="subtitle">Position 1</h2>   
           <div class="control">
             <input class="input" type="text" placeholder="Company Name">
           </div>

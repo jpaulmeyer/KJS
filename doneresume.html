@@ -8,19 +8,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
 </head>
 <body onload="printOption()">
-            <!--END NAV-->
-        <section class="hero is-dark">
-                <div class="hero-body">
-                  <div class="container">
-                    <h1 class="title">
-                     Here's Your Resume
-                    </h1>
-                    <h2 class="subtitle">
-                      Make changes and download!
-                    </h2>
+            
+        <nav class="navbar is-black">
+                <div class="container">
+                  <div class="navbar-brand">
+                    <a class="navbar-item" href="index.html">
+                      <img src="http://alanstevens.io/media/icon_resume.gif" alt="Logo">
+                    </a>
+                    <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </span>
                   </div>
-                </div>
-              </section>
+                  <div id="navbarMenuHeroC" class="navbar-menu">
+                    <div class="navbar-start">
+                      <a class="navbar-item" href="doneresume.html">
+                        Your Resume
+                      </a>
+                      <nav class="navbar is-black" role="navigation" aria-label="dropdown navigation">
+                        <div class="navbar-item has-dropdown is-hoverable">
+                          <a class="navbar-link">
+                            Jump To
+                          </a>
+                          <div class="navbar-dropdown">
+                            <a class="navbar-item" href="education.html">
+                              Education
+                            </a>
+                            <a class="navbar-item" href="past.html">
+                              Roles
+                            </a>
+                            <a class="navbar-item" href="responsibilities.html">
+                              Responsibilities
+                            </a>
+                            <a class="navbar-item" href="skills.html" >
+                              Skills
+                            </a>
+                          </div>
+                        </div>
+                      </nav>
+                      <a class="navbar-item" href="contactus.html">
+                        Contact Us
+                      </a>
+                    </div>
+                  </div> 
+              </div> 
+            </nav>
+            
         <script>
                   function printOption() {
                   document.getElementById("resume-type").innerHTML = "Resume for: "+sessionStorage.getItem("industry")
@@ -29,10 +63,17 @@
                 }
         </script>
     <div id="resume-type" style="text-align: center">
-    </div>    
-    <div id="resume" style="text-align: center; border-style: solid; margin-top: 10px; margin-right: 250px;  margin-left: 250px">
-    </div>   
-                        <footer class="footer">
+    </div>
+    <div class="column is-9" STYLE="margin-right: 250px;  margin-left: 165px">
+      <div class="box content">
+        <article class="post">    
+          <div id="resume" style="text-align: center; margin-top: 10px; ">
+          </div>  
+        </article>
+      </div>
+    </div>                    
+
+    <footer class="footer">
                                 <div class="container">
                                   <div class="content has-text-centered">
                                               <div class="buttons">
