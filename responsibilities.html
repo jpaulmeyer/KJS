@@ -171,10 +171,10 @@ function Warn() {
   if((sessionStorage.getItem('response')).length < 20) {
     alert ("Score: 1/5. Your response doesn't tell us enough about you! Make sure to read our tips if you need help getting started."); 
     }
-  if((sessionStorage.getItem('response')).length > 20 || (sessionStorage.getItem('response')).length < 70) {
+  else if((sessionStorage.getItem('response')).length < 50) {
     alert ("Score: 3/5. Your response is solid! Quantify your statements to get specific and make your resume great."); 
     }  
-  if((sessionStorage.getItem('response')).length < 70) {
+  else if((sessionStorage.getItem('response')).length < 150) {
     alert ("Score: 5/5. Your response is great, keep up the good work."); 
     }  
   }
