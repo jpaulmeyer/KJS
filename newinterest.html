@@ -26,6 +26,10 @@
       sessionStorage.setItem('industry', obj.options[obj.selectedIndex].text)
       console.log(sessionStorage.getItem('industry'))
   }
+  function interestHelp() {
+     alert ("It is helpful to tailor your resume to a specific industry. Pick one to begin and we will help you create a resume for jobs in that industry.");
+     
+  }
   </script>
   <!--form for dropdown menu-->
   <div class="container" style="text-align: center">
@@ -46,9 +50,9 @@
       </form>
           <a href="/index.html">
             <span class="button is-dark">Back</span>
-          </a>  
+          </a> 
+          <span class="button is-danger" onclick="interestHelp()">Help</span> 
           <input type="button" class="button is-link" onclick="getOption(); location.href='https://jpaulmeyer.github.io/education.html'" value="Submit">
-    
     </section> 
   </div>
 

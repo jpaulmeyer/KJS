@@ -61,6 +61,9 @@
     sessionStorage.setItem('education', education)
     console.log(education);
   }
+  function educationHelp() {
+     alert ("Education is not a required field! If your past experience better aligns with another section, feel free to skip ahead!");
+   }
 </script>  
 
     <div class="container" style="text-align: center">
@@ -119,7 +122,8 @@
         <a href="/newinterest.html">
           <span class="button is-dark">Back</span>
         </a>  
-        <input type="button" class="button is-link" onclick="myFunction(); location.href='https://jpaulmeyer.github.io/past.html'" value="Submit">   
+        <span class="button is-danger" onclick="educationHelp()">Help</span> 
+        <input type="button" class="button is-link" onclick="myFunction(); location.href='https://jpaulmeyer.github.io/past.html'" value="Submit/Skip">   
       </section>  
   </div>  
 
