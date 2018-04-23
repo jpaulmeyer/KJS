@@ -41,10 +41,9 @@
                         <div class="hero-body">
                           <div class="container">
                             <h1 class="title">
-                              Select skills that you are comfortable with
+                              
                             </h1>
                             <h2 class="subtitle">
-                                Use command+(option) to select more than one
                             </h2>
                           </div>
                         </div>
@@ -72,56 +71,44 @@
 
     
 <script>
-function getOption() {
-    var skills = document.getElementById("addedSkill");
-    sessionStorage.setItem('skills', skills.options[skills.selectedIndex].text)
-    console.log(sessionStorage.getItem('skills'))
-} 
-</script>
+  function myFunction() {
+    var x = document.getElementById("frm1");
+    var skills = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        skills += x.elements[i].value + "<br>";
+    }
+    sessionStorage.setItem('skill', skills)
+    console.log(skills);
+  }
+  function skillsHelp() {
+     alert ("Skills are a great place to state your industry specific capabilities, as well as let employers know programs/equipment you feel confident using.");
+   }
+</script>  
 
-<div class="container">
-  <section class="section">
-    <div class="columns">
-      <div class="column is-3 is offset-2 is "></div>
-        <div class="column">
-          <h1 class="title">Select all that apply</h1>
-            <div class="select is-multiple">
-              <form> 
-                <select name="addedSkill" id="addedSkill" multiple size="12">
-                  <option value="1">Word</option>
-                  <option value="2">Powerpoint</option>
-                  <option value="3">Excel</option>
-                  <option value="4">SQL</option>
-                  <option value="5">Python</option>
-                  <option value="6">Javascript</option>
-                  <option value="7">Copywriting</option>
-                  <option value="8">Event Planning</option>
-                  <option value="9">SEO/SEM Marketing</option>
-                  <option value="10">Bookkeeping</option>               
-                </select> 
-                <input type="button" onclick="getOption();location.href='https://jpaulmeyer.github.io/doneresume.html'" value="Submit">
-              </form>  
-            </div>        
-        </div>
-    </div>
-  </section>
-</div> 
-   
-<section class="section">
-  <div class="container">
-    <div>
-</section>
+    <div class="container" style="text-align: center">
+      <section class="section">
+        <form id="frm1">
+          <h1 class="title">Skills</h1>   
+            <div class="control">
+              <input class="input" type="text" name="highschool" placeholder="What do you feel comfortable using? Ex: Excel">
+            </div>
+        </form>  
+        <a href="responsibilities.html">
+          <span class="button is-dark">Back</span>
+        </a>  
+        <span class="button is-danger" onclick="skillsHelp()">Help</span>
+        <input type="button" class="button is-link" onclick="myFunction(); location.href='https://jpaulmeyer.github.io/doneresume.html'" value="Submit">  
+      </section>
+    </div>  
+
 <section class="section">
   <div class="container">
     <footer class="footer">
       <div class="container">
         <div class="content has-text-centered">
           <div class="buttons">
-            <a href="/responsibilities.html">
-              <span class="button is-dark">Back</span>
-            <a href="/doneresume.html">
-              <span class="button is-info">Continue</span>
-            </a>
+            
           </div>
         </div>
       </div>

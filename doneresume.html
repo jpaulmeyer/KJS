@@ -25,10 +25,10 @@
                   function printOption() {
                   document.getElementById("resume").innerHTML =
                   "Resume for: "+sessionStorage.getItem("industry")+"<br>"+"<br>"+"Education:"+"<br>"
-                  +sessionStorage.getItem("education")+"<br>"+"Work Experience:"+"<br>"+sessionStorage.getItem("position")+"<br>"+sessionStorage.getItem("responsibilities")+sessionStorage.getItem("responseOption")+ " "+sessionStorage.getItem("response")+"<br>"+sessionStorage.getItem("responseOption2")+ " "+sessionStorage.getItem("response2")+"Skills:"+"<br>"+sessionStorage.getItem("skills");
+                  +sessionStorage.getItem("education")+"<br>"+"Work Experience:"+"<br>"+sessionStorage.getItem("position")+"<br>"+sessionStorage.getItem("responsibilities")+ " "+sessionStorage.getItem("response")+"<br>"+"Skills:"+"<br>"+sessionStorage.getItem("skill");
                 }
         </script>
-    <div id="resume">
+    <div id="resume" style="text-align: center; border-style: solid; margin-top: 10px; margin-right: 250px;  margin-left: 250px">
     </div>   
                         <footer class="footer">
                                 <div class="container">
@@ -36,11 +36,6 @@
                                               <div class="buttons">
                                                     <a href="skills.html">
                                                       <span class="button is-dark">Back</span>
-                                                    </a>
-                                                    <a href="doneresume.html">
-                                                    <span class="button is-success">Save changes</span>
-                                                    </a>
-                                                  </div>
                                   </div>
                                 </div>
                               </footer>       
