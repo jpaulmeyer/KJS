@@ -87,10 +87,20 @@
       <button class="accordion">Tips on what to say!</button>
       <div class="panel">
         <p>
-            Focus on quantifying your accomplishments and skills. Your accomplishment statements are the best way to showcase the amazing
-            things you’ve done at your past jobs, plus show prospective employers what you can do for them.
+            1. Quantify! Tie real numbers into your accomplishments to take them to the next level. This lets employers know specifics about your past and what you can bring to the table.
+            <br/>
+            2. Action words matter. Make sure to include verbs that best convey what you did at a past job. This shows you are active and passionate by telling employers concrete action you have taken.
+            <br/>
+            <img src="img/actionwords.jpg" alt="Mountain View">
+            <br/>
+            3. Change is good. Talk about how each of your accomplishments and actions positively affected the company you worked for. This will get employers thinking about how you would benefit THEIR company.
+            <br/>
+            4. No relevant experience? No problem. Focus your resume on your relevant and transferrable skills along with any related projects you may have done. Skills and experience can be gained in many ways, so show employers how you can be the best fit for them.
+            <br/>
+            5. Sell yourself! You do not need to include everything, but highlight your best accomplishments and show future employers in your chosen field that you are ready for the job.
         </p>
       </div>  
+      
       <script>
           var acc = document.getElementsByClassName("accordion");
           var i;
@@ -163,47 +173,7 @@ function myFunction() {
 }
 </script> 
 
-<div class="container">
-  <div class="field">
-    <section class="section">
-      <div class="control">
-        <div class="select is-dark">
-          <form>
-            <select name="newResponse" id="newResponse">
-                <option >Select An Action</option>
-                <option value="2">Analyzed</option>
-                <option value="3">Coordinated</option>
-                <option value="4">Developed</option>
-                <option value="5">Designed</option>
-                <option value="6">Engineered</option>
-                <option value="7">Managed</option>
-            </select> 
-          </form>
-      </div>
-    </div>
-    <form id="frm1">
-      <div class="control">
-          <input class="input" type="text" placeholder="Tell us more!">
-      </div>
-    </form>  
-          <form>
-            <select name="newResponse2" id="newResponse2">
-                <option >Select An Action</option>
-                <option value="2">Analyzed</option>
-                <option value="3">Coordinated</option>
-                <option value="4">Developed</option>
-                <option value="5">Designed</option>
-                <option value="6">Engineered</option>
-                <option value="7">Managed</option>
-            </select> 
-          </form>
-    <form id="frm2">
-      <div class="control">
-          <input class="input" type="text" placeholder="Tell us more!">
-      </div>
-    </form>  
-
-   <!--TRYING TO ADD A POP UP TO TELL THE PERSON TO DO BETTER ON THE RESPONSE-->
+<!--TRYING TO ADD A POP UP TO TELL THE PERSON TO DO BETTER ON THE RESPONSE-->
     <script type="text/javascript">
     
          function Warn() {
@@ -212,39 +182,8 @@ function myFunction() {
          }
      
    </script>
-   <!--THE ORIGINAL BUTTON-->
-   <button onclick="getOption();myFunction();location.href='https://jpaulmeyer.github.io/skills.html'">Submit</button>
-   <form>
-      <input type="button" value="Get your response score" onclick="Warn();" />
-   </form>
 
-      
-      
-      <div class="container">
-        <div class="field">
-          <section class="section">
-            <div class="control">
-              <div class="select is-dark">
-                <form>
-                  <select name="newResponse2" id="newResponse2">
-                      <option >Select An Action</option>
-                      <option value="2">Analyzed</option>
-                      <option value="3">Coordinated</option>
-                      <option value="4">Developed</option>
-                      <option value="5">Designed</option>
-                      <option value="6">Engineered</option>
-                      <option value="7">Managed</option>
-                  </select> 
-                <!--<input type="button" onclick="getOption()" value= "Submit">-->
-                </form>
-            </div>
-          </div>
-
-       
-  </div>
-    
-
- <!--TRYING TO ADD A POP UP TO TELL THE PERSON TO DO BETTER ON THE RESPONSE-->
+   <!--TRYING TO ADD A POP UP TO TELL THE PERSON TO DO BETTER ON THE RESPONSE-->
  <script type="text/javascript">
     
   function Warn() {
@@ -260,36 +199,28 @@ function myFunction() {
   }
 
 </script>
-   
-<!--
+
+<div class="container">
+  <div class="field">
     <section class="section">
-      <div class="control">
-        <div class="select is-dark">
-          <form>
-            <select name="newResponse" id="newResponse">
-                <option value="1">Select An Action</option>
-                <option value="2">Analyzed</option>
-                <option value="3">Coordinated</option>
-                <option value="4">Developed</option>
-                <option value="5">Designed</option>
-                <option value="6">Engineered</option>
-                <option value="7">Managed</option>
-            </select> 
-          <input type="button" onclick="getOption()" value="Submit">
-          </form>
-      </div>
-    </div>
-    <form id="frm1">
-      <div class="control">
-          <input class="input" type="text" placeholder="Tell us more!">
-          <input type = "button" onclick = "myFunction()" value = "Submit">
-      </div>
-    </form>  
+      <h1 class="title">Tell Us What You Can Do:</h1>
+      <form id="frm1">
+        <div class="control">
+          <input class="input" type="text" placeholder="Ex: Managed a team of 20 to complete large-scale retail marketing campaigns">
+        </div>
+      </form>  
+      <input type="button" class="button is-link" onclick="getOption();myFunction();location.href='https://jpaulmeyer.github.io/skills.html'" value="Submit">
+      <input type="button" class="button is-link" onclick="Warn();" value="Get your response score">
+    </section>
   </div>
--->
-            <!--ADDING THIS FOR THE ADD MORE FUNCTIONALITY NOT IMPLEMENTED
-            <input type = "button" onclick = "myfunc()" value = "Add more">
-            -->
+</div>    
+
+   
+   <!--THE ORIGINAL BUTTON-->
+   
+   
+    
+   
         </section>
   <section class="section">
           <div class="container">
@@ -302,12 +233,7 @@ function myFunction() {
                                                     <div class="container">
                                                       <div class="content has-text-centered">
                                                                   <div class="buttons">
-                                                                      <a href="contactus.html">
-                                                                        <span class="button is-danger">Help</span>
-                                                                      </a>
-                                                                      <a href="/detailpast.html">
-                                                                        <span class="button is-dark">Back</span>
-                                                                      </a>  
+                                                                      
                                                                       </div>
                                                       </div>
                                                     </div>
@@ -315,8 +241,7 @@ function myFunction() {
                                     </div>
                                   </section>
                            
-                            
-              </body>          
+                    
 
               
 </body>
