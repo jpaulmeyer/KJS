@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Your Resume</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
 </head>
 <body onload="printOption()">
@@ -54,7 +55,7 @@
                   </div> 
               </div> 
             </nav>
-            
+
         <script>
                   function printOption() {
                   document.getElementById("resume-type").innerHTML = "Resume for: "+sessionStorage.getItem("industry")
@@ -73,20 +74,37 @@
       </div>
     </div>                    
 
-    <footer class="footer">
-                                <div class="container">
-                                  <div class="content has-text-centered">
-                                              <div class="buttons">
-                                                    <a href="skills.html">
-                                                      <span class="button is-dark">Back</span>
-                                                    </a>
-                                                    <a href="thankyou.html">
-                                                      <span class="button is-info">Download</span>
-                                                    </a>
-                                  </div>
-                                </div>
-                              </footer>       
+<div class="progress" style="height: 200px">
+  <div class="circle done">
+  <span class="label">1</span>
+  <span class="title">0%</span>
+  </div>
+  <span class="bar done"></span>
+  <div class="circle done">
+  <span class="label">2</span>
+  <span class="title">20%</span>
+  </div>
+  <span class="bar half done"></span>
+  <div class="circle done">
+  <span class="label">3</span>
+  <span class="title">40%</span>
+  </div>
+  <span class="bar done"></span>
+  <div class="circle done">
+  <span class="label">4</span>
+  <span class="title">60%</span>
+  </div>
+  <span class="bar done"></span>
+  <div class="circle done">
+  <span class="label">5</span>
+  <span class="title">80%</span>
+  </div>
+  <span class="bar done"></span>
+  <div class="circle done">
+  <span class="label">6</span>
+  <span class="title">100%</span>
+  </div>
+</div>    
 
-    
 </body>
 </html>
