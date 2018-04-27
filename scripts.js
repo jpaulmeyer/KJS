@@ -16,7 +16,7 @@ $('.progress .bar:nth-of-type(' + (i - 1) + ')').addClass('active');
 $('.progress .bar:nth-of-type(' + (i - 2) + ')').removeClass('active').addClass('done');
 
 i++;
-}
+
 if (i == 0) {
 $('.progress .bar').removeClass().addClass('bar');
 $('.progress div.circle').removeClass().addClass('circle');
@@ -24,4 +24,5 @@ i = 1;
 }
 }, 1000);
 console.log($(location).attr('href'))
+}
 });
