@@ -1,46 +1,162 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Repartus: A smarter resume builder</title>
-    <meta name="description" content="KJS. Get Back in the Game!">
-    <html lang="en">
-    <link rel="stylesheet" type="text/css" href="/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="/css/index.css" />
+    <title>Repartus</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
-    </html>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 </head>
-
 <body>
-    <div id="navframe">
-        <div id="nf-logo"><a href="/"><img src="img/resume.png" alt="Repartus" height="100"></a></div>
-        <div id="nf-title">
-            <h1 style="text-align: center;" class="is-size-1">Repartus</h1>
-            <h1 style="text-align: center; text-size: 15">A Place To Build A Better Resume</h1>
-        </div>
-        <div id="nf-tabs">
-            <a href="whatwedo.html">
-                <div class="nf-tab" id="whatwedo"><span>WHAT WE DO</span></div>
-            </a>
-            <a href="howitworks.html">
-                <div class="nf-tab" id="howitworks"><span>HOW IT WORKS</span></div>
-            </a>
-            <a href="contactus.html">
-                <div class="nf-tab" id="contactus"><span>CONTACT US</span></div>
-            </a>
-        </div>
-    </div>
-    <div class="is-white is-large container">
-        .
-    </div>
-    <div class="container">
-        <a style="display: block; margin: auto" class="button is-bold is-dark is-large has-text-centered" href="newinterest.html">
-            Click to Get Started!
-        </a>
-        <div id="form-stuff">
-            <!--form action="/part2" method="GET"><input type="textarea" name="title" style="display: block; margin: 0 auto;" /><input type="submit" value="SEND" style="display: block; margin: 0 auto;" /></form-->
-        </div>
-    </div>
-</body>
 
+ <nav class="navbar is-black">
+                <div class="container">
+                  <div class="navbar-brand">
+                    <a class="navbar-item" href="index.html">
+                      <img src="https://alanstevens.io/media/icon_resume.gif" alt="Logo">
+                    </a>
+                    <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                  </div>
+                  <div id="navbarMenuHeroC" class="navbar-menu">
+                    <div class="navbar-start">
+                      <a class="navbar-item" href="doneresume.html">
+                        Your Resume
+                      </a>
+                      <nav class="navbar is-black" role="navigation" aria-label="dropdown navigation">
+                        <div class="navbar-item has-dropdown is-hoverable">
+                          <a class="navbar-link">
+                            Jump To
+                          </a>
+                          <div class="navbar-dropdown">
+                            <a class="navbar-item" href="education.html">
+                              Education
+                            </a>
+                            <a class="navbar-item" href="past.html">
+                              Roles
+                            </a>
+                            <a class="navbar-item" href="responsibilities.html">
+                              Responsibilities
+                            </a>
+                            <a class="navbar-item" href="skills.html" >
+                              Skills
+                            </a>
+                          </div>
+                        </div>
+                      </nav>
+                      <a class="navbar-item" href="contactus.html">
+                        Contact Us
+                      </a>
+                    </div>
+                  </div> 
+              </div> 
+            </nav>
+
+
+        <!-- Intro -->
+            <section id="intro" class="main style1 dark fullscreen">
+                <div class="content">
+                    <header>
+                        <h2>Repartus</h2>
+                    </header>
+                    <p><strong>Creating Resumes That Work</strong></p>
+                    <footer>
+                        <a href="#one" class="button style2 down">More</a>
+                    </footer>
+                </div>
+            </section>
+
+        <!-- One -->
+            <section id="one" class="main style2 right dark fullscreen">
+                <div class="content">
+                    <header>
+                        <h2>Who We Are</h2>
+                    </header>
+                    <p></p>
+                </div>
+                <a href="#two" class="button style2 down anchored">Next</a>
+            </section>
+
+        <!-- Projects -->
+            <section id="two" class="main style3 dark fullscreen">
+                <div class="content">
+                    <header>
+                        <h2>What We D0</h2>  
+                    </header>
+
+                
+                        </div>
+                </div>
+                <a href="#work" class="button style2 down anchored">Next</a>
+            </section>
+
+        <!-- Work -->
+            <section id="work" class="main style3 dark fullscreen">
+                <div class="content">
+                    <header>
+                        <h2>How It Works</h2>   
+                    </header>
+
+                    
+                </div>
+            </section>
+
+         Contact 
+            <section id="contact" class="main style3 secondary">
+                <div class="content">
+                    <header>
+                        <h2>Say Hello.</h2>
+                        <p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.</p>
+                    </header>
+                    <div class="box">
+                        <form method="post" action="#">
+                            <div class="field half first"><input type="text" name="name" placeholder="Name" /></div>
+                            <div class="field half"><input type="email" name="email" placeholder="Email" /></div>
+                            <div class="field"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
+                            <ul class="actions">
+                                <li><input type="submit" value="Send Message" /></li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            
+
+        <!-- Footer -->
+            <footer id="footer">
+
+                <!-- Icons -->
+                    <!--<ul class="actions">
+                        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+                        <li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+                    </ul>
+                <!-- Menu                   <ul class="menu">
+                        <li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                    </ul>-->
+
+
+            </footer>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.poptrox.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/skel.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+            <script src="assets/js/main.js"></script>
+
+    </body>
 </html>
